@@ -1,0 +1,53 @@
+<header>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row nav-content">
+           <!-- Logo part -->
+          <div class="col-md-6 col-sm-12">
+            <div class="row logo">
+              <a href="/#home"><img src="../img/header/logo.png"></a>
+             <h1 class="text-hide">Seven Oaks</h1>
+            </div>
+          </div>   <!--Closing Logo part -->
+          <!-- Top nav-->
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-md-12">
+                <nav class="secondary-menu">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#" class="calendar">Calendar</a></li>
+                    <li><a href="#" class="blog">Blog</a></li>
+                    <li><a href="#" class="contact">Contact us</a></li>
+                    <li><a href="#" class="search"><i class="fa fa-search"></i></a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div> <!--Closing Top nav-->
+            <!-- Bottom nav-->
+            <div class="row">
+              <div class="col-md-12">
+                <nav class="main-menu">
+                  <ul class="nav navbar-nav">
+                    <li ng-repeat="navItem in ctrlNav.navOptions">
+                      <a ng-click="ctrlNav.changeStatus(navItem)" href="{{navItem.href}}">
+                        {{navItem.name}}
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div><!--Closing Bottom nav-->
+          </div>
+        </div>
+        <!-- Call to action-->
+        <div class="row">
+          <div class="col-md-6 call-to-action">
+            <h1>{{ctrlNav.itemName}}</h1>
+          </div>
+        </div><!--Closing Call to action-->
+      </div>
+      <i class="fa fa-chevron-left arrow"></i>
+      <i class="fa fa-chevron-right arrow"></i>
+    </div>
+  </section>
+  </header>

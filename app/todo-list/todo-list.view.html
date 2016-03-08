@@ -1,0 +1,11 @@
+<div class="todo-input-container container">
+  <div class="row">
+    <div class="col m12">
+      <a ng-click="todoCtrl.addNew(todoCtrl.task)"class="teal todo-add-btn waves-effect waves-light btn-large">Add</a>
+      <input ng-model="todoCtrl.task" id="todo-input" type="text" name="name" value="">
+      <div ng-repeat="task in todoCtrl.taskList">
+        <task done-task="todoCtrl.done(task)" task-list="todoCtrl.taskList" task="task" delete-task="todoCtrl.deleteTask(task)"></task>
+      </div>
+    </div>
+  </div>
+</div>

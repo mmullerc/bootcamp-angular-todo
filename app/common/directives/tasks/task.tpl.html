@@ -1,0 +1,9 @@
+<div class="task">
+  <div class="card blue-grey">
+    <div class="card-content white-text">
+       <a ng-click="taskCtrl.deleteTask($index)"class="orange darken-1 delete-btn btn-floating btn-large waves-effect waves-light">X</a>
+       <a ng-click="taskCtrl.doneTask($index);taskCtrl.done()" class="done-btn orange darken-1 delete-btn btn-floating btn-large waves-effect waves-light"><i class="small mdi-action-done"></i></a>
+       <input ng-class="taskCtrl.class" class="tsk-input card-title" ng-model="taskCtrl.task.task">
+    </div>
+  </div>
+</div>

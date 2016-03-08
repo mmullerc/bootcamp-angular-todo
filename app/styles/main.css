@@ -1,0 +1,23 @@
+.todo-input-container{
+  margin-top: 3em;
+}
+.todo-add-btn{
+  float: right;
+}
+#todo-input{
+  display: inline-block;
+  width:80%;
+}
+.delete-btn{
+float: right;
+}
+.tsk-input{
+  width: 70% !important;
+}
+.done-btn{
+  margin-right: 2em;
+}
+.done-text{
+  text-decoration: line-through;
+  color:red;
+}

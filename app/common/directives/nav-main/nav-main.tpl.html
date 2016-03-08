@@ -1,0 +1,9 @@
+<nav class="main-menu">
+  <ul class="nav navbar-nav">
+    <li ng-repeat="navItem in navList" ng-click="'active' : navItem.active = true">
+      <a href="{{navItem.href}}">
+        {{navItem.name}}
+      </a>
+    </li>
+  </ul>
+</nav>
